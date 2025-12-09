@@ -16,15 +16,15 @@ if(isset($_POST['send'])) {
 
     try {
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'atikwork1409@gmail.com';      // your Gmail (sender)
-        $mail->Password   = 'bgvu lqyy vlao czym';        // Gmail App Password
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->Host       = // add your details
+        $mail->SMTPAuth   = // add your details
+        $mail->Username   = // add your details
+        $mail->Password   = // add your details
+        $mail->SMTPSecure = // add your details
+        $mail->Port       =// add your details
 
         // Sender
-        $mail->setFrom('atikwork1409@gmail.com', 'Hospital Admin');
+        $mail->setFrom('your email', 'Hospital Admin');
 
         // Recipient: patient email from the form
         $mail->addAddress($patient_email, $patient_name);
@@ -77,3 +77,4 @@ if(isset($_POST['send'])) {
 </form>
 </body>
 </html>
+
